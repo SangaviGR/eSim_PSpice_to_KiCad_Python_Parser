@@ -1,0 +1,560 @@
+EESchema Schematic File Version 2
+LIBS:adc-dac
+LIBS:memory
+LIBS:xilinx
+LIBS:microcontrollers
+LIBS:dsp
+LIBS:microchip
+LIBS:analog_switches
+LIBS:motorola
+LIBS:texas
+LIBS:intel
+LIBS:audio
+LIBS:interface
+LIBS:digital-audio
+LIBS:philips
+LIBS:display
+LIBS:cypress
+LIBS:siliconi
+LIBS:opto
+LIBS:atmel
+LIBS:contrib
+LIBS:power
+LIBS:eSim_Plot
+LIBS:transistors
+LIBS:conn
+LIBS:eSim_User
+LIBS:regul
+LIBS:74xx
+LIBS:cmos4000
+LIBS:eSim_Analog
+LIBS:eSim_Devices
+LIBS:eSim_Digital
+LIBS:eSim_Hybrid
+LIBS:eSim_Miscellaneous
+LIBS:eSim_Power
+LIBS:eSim_Sources
+LIBS:eSim_Subckt
+LIBS:CIRCUIT-cache
+EELAYER 25 0
+EELAYER END
+$Descr A4 11693 8268
+encoding utf-8
+Sheet 1 1
+Title ""
+Date ""
+Rev ""
+Comp ""
+Comment1 ""
+Comment2 ""
+Comment3 ""
+Comment4 ""
+$EndDescr
+$Comp
+L titleblk_PSPICE titleblk?
+U 1 1 5ED268D1
+P 9700 7200
+F 0 "titleblk?" H 19400 14400 30  0001 L CNN
+F 1 "titleblk" H 19400 14480 30  0001 L CNN
+F 2 "" H 9700 7200 60  0001 C CNN
+F 3 "" H 9700 7200 60  0001 C CNN
+	1    9700 7200
+	1    0    0    -1  
+$EndComp
+$Comp
+L titleblk_PSPICE titleblk?
+U 1 1 5ED268D2
+P 9700 7200
+F 0 "titleblk?" H 19400 14400 30  0001 L CNN
+F 1 "titleblk" H 19400 14480 30  0001 L CNN
+F 2 "" H 9700 7200 60  0001 C CNN
+F 3 "" H 9700 7200 60  0001 C CNN
+	1    9700 7200
+	1    0    0    -1  
+$EndComp
+$Comp
+L GND #PWR?
+U 1 1 5ED268D3
+P 1100 2050
+F 0 "#PWR?" H 1700 3550 30  0001 L CNN
+F 1 "GND_ANALOG" H 1700 3630 30  0001 L CNN
+F 2 "" H 1100 2050 60  0001 C CNN
+F 3 "" H 1100 2050 60  0001 C CNN
+	1    1100 2050
+	1    0    0    -1  
+$EndComp
+$Comp
+L GND #PWR?
+U 1 1 5ED268D4
+P 1100 3050
+F 0 "#PWR?" H 1700 5550 30  0001 L CNN
+F 1 "GND_ANALOG" H 1700 5630 30  0001 L CNN
+F 2 "" H 1100 3050 60  0001 C CNN
+F 3 "" H 1100 3050 60  0001 C CNN
+	1    1100 3050
+	1    0    0    -1  
+$EndComp
+$Comp
+L GND #PWR?
+U 1 1 5ED268D5
+P 5200 2750
+F 0 "#PWR?" H 9900 4950 30  0001 L CNN
+F 1 "GND_ANALOG" H 9900 5030 30  0001 L CNN
+F 2 "" H 5200 2750 60  0001 C CNN
+F 3 "" H 5200 2750 60  0001 C CNN
+	1    5200 2750
+	1    0    0    -1  
+$EndComp
+$Comp
+L GND #PWR?
+U 1 1 5ED268D6
+P 7200 3350
+F 0 "#PWR?" H 13900 6150 30  0001 L CNN
+F 1 "GND_ANALOG" H 13900 6230 30  0001 L CNN
+F 2 "" H 7200 3350 60  0001 C CNN
+F 3 "" H 7200 3350 60  0001 C CNN
+	1    7200 3350
+	1    0    0    -1  
+$EndComp
+$Comp
+L GND #PWR?
+U 1 1 5ED268D7
+P 9000 3350
+F 0 "#PWR?" H 17500 6150 30  0001 L CNN
+F 1 "GND_ANALOG" H 17500 6230 30  0001 L CNN
+F 2 "" H 9000 3350 60  0001 C CNN
+F 3 "" H 9000 3350 60  0001 C CNN
+	1    9000 3350
+	1    0    0    -1  
+$EndComp
+$Comp
+L GND #PWR?
+U 1 1 5ED268D8
+P 9000 3950
+F 0 "#PWR?" H 17500 7350 30  0001 L CNN
+F 1 "GND_ANALOG" H 17500 7430 30  0001 L CNN
+F 2 "" H 9000 3950 60  0001 C CNN
+F 3 "" H 9000 3950 60  0001 C CNN
+	1    9000 3950
+	1    0    0    -1  
+$EndComp
+$Comp
+L r_PSPICE R?
+U 1 1 5ED268D9
+P 1400 1550
+F 0 "R?" H 1400 1550 30  0000 L CNN
+F 1 "25k" H 1400 1700 30  0000 L CNN
+F 2 "" H 1400 1550 60  0001 C CNN
+F 3 "" H 1400 1550 60  0001 C CNN
+	1    1400 1550
+	1    0    0    -1  
+$EndComp
+$Comp
+L r_PSPICE R?
+U 1 1 5ED268DA
+P 1400 2050
+F 0 "R?" H 1400 2050 30  0000 L CNN
+F 1 "15k" H 1400 2200 30  0000 L CNN
+F 2 "" H 1400 2050 60  0001 C CNN
+F 3 "" H 1400 2050 60  0001 C CNN
+	1    1400 2050
+	1    0    0    -1  
+$EndComp
+$Comp
+L VDC_PSPICE V?
+U 1 1 5ED268DB
+P 1100 1650
+F 0 "V?" H 1100 1650 30  0000 L CNN
+F 1 "10V" H 1100 1540 30  0000 C CNN
+F 2 "" H 1100 1650 60  0001 C CNN
+F 3 "" H 1100 1650 60  0001 C CNN
+	1    1100 1650
+	1    0    0    -1  
+$EndComp
+$Comp
+L VDC_PSPICE V?
+U 1 1 5ED268DC
+P 1100 3050
+F 0 "V?" H 1100 3050 30  0000 L CNN
+F 1 "10V" H 1100 2940 30  0000 C CNN
+F 2 "" H 1100 3050 60  0001 C CNN
+F 3 "" H 1100 3050 60  0001 C CNN
+	1    1100 3050
+	-1   0    0    1   
+$EndComp
+$Comp
+L OPAMP_PSPICE X?
+U 1 1 5ED268DD
+P 2800 2650
+F 0 "X?" H 2800 2650 30  0000 L CNN
+F 1 "OPAMP" H 2800 2730 30  0000 L CNN
+F 2 "" H 2800 2650 60  0001 C CNN
+F 3 "" H 2800 2650 60  0001 C CNN
+	1    2800 2650
+	1    0    0    -1  
+$EndComp
+$Comp
+L OPAMP_PSPICE U?
+U 1 1 5ED268DE
+P 2800 1650
+F 0 "U?" H 2800 1650 30  0000 L CNN
+F 1 "OPAMP" H 2800 1730 30  0000 L CNN
+F 2 "" H 2800 1650 60  0001 C CNN
+F 3 "" H 2800 1650 60  0001 C CNN
+	1    2800 1650
+	1    0    0    -1  
+$EndComp
+$Comp
+L r_PSPICE R?
+U 1 1 5ED268DF
+P 4400 1850
+F 0 "R?" H 4400 1850 30  0000 L CNN
+F 1 "10k" H 4400 2000 30  0000 L CNN
+F 2 "" H 4400 1850 60  0001 C CNN
+F 3 "" H 4400 1850 60  0001 C CNN
+	1    4400 1850
+	1    0    0    -1  
+$EndComp
+$Comp
+L r_PSPICE R?
+U 1 1 5ED268E0
+P 4400 2850
+F 0 "R?" H 4400 2850 30  0000 L CNN
+F 1 "10k" H 4400 3000 30  0000 L CNN
+F 2 "" H 4400 2850 60  0001 C CNN
+F 3 "" H 4400 2850 60  0001 C CNN
+	1    4400 2850
+	1    0    0    -1  
+$EndComp
+$Comp
+L r_PSPICE R?
+U 1 1 5ED268E1
+P 5400 1850
+F 0 "R?" H 5400 1850 30  0000 L CNN
+F 1 "10k" H 5400 2000 30  0000 L CNN
+F 2 "" H 5400 1850 60  0001 C CNN
+F 3 "" H 5400 1850 60  0001 C CNN
+	1    5400 1850
+	1    0    0    -1  
+$EndComp
+$Comp
+L OPAMP_PSPICE U?
+U 1 1 5ED268E2
+P 5200 2350
+F 0 "U?" H 5200 2350 30  0000 L CNN
+F 1 "OPAMP" H 5200 2430 30  0000 L CNN
+F 2 "" H 5200 2350 60  0001 C CNN
+F 3 "" H 5200 2350 60  0001 C CNN
+	1    5200 2350
+	1    0    0    -1  
+$EndComp
+$Comp
+L r_PSPICE R?
+U 1 1 5ED268E3
+P 6300 2550
+F 0 "R?" H 6300 2550 30  0000 L CNN
+F 1 "r" H 6300 2630 30  0000 L CNN
+F 2 "" H 6300 2550 60  0001 C CNN
+F 3 "" H 6300 2550 60  0001 C CNN
+	1    6300 2550
+	1    0    0    -1  
+$EndComp
+$Comp
+L r_PSPICE R?
+U 1 1 5ED268E4
+P 7300 2550
+F 0 "R?" H 7300 2550 30  0000 L CNN
+F 1 "5k" H 7300 2700 30  0000 L CNN
+F 2 "" H 7300 2550 60  0001 C CNN
+F 3 "" H 7300 2550 60  0001 C CNN
+	1    7300 2550
+	1    0    0    -1  
+$EndComp
+$Comp
+L OPAMP_PSPICE U?
+U 1 1 5ED268E5
+P 7200 2950
+F 0 "U?" H 7200 2950 30  0000 L CNN
+F 1 "OPAMP" H 7200 3030 30  0000 L CNN
+F 2 "" H 7200 2950 60  0001 C CNN
+F 3 "" H 7200 2950 60  0001 C CNN
+	1    7200 2950
+	1    0    0    -1  
+$EndComp
+$Comp
+L r_PSPICE R?
+U 1 1 5ED268E6
+P 8500 3650
+F 0 "R?" H 8500 3650 30  0000 L CNN
+F 1 "r" H 8500 3730 30  0000 L CNN
+F 2 "" H 8500 3650 60  0001 C CNN
+F 3 "" H 8500 3650 60  0001 C CNN
+	1    8500 3650
+	1    0    0    -1  
+$EndComp
+$Comp
+L r_PSPICE R?
+U 1 1 5ED268E7
+P 9100 3650
+F 0 "R?" H 9100 3650 30  0000 L CNN
+F 1 "r" H 9100 3730 30  0000 L CNN
+F 2 "" H 9100 3650 60  0001 C CNN
+F 3 "" H 9100 3650 60  0001 C CNN
+	1    9100 3650
+	1    0    0    -1  
+$EndComp
+$Comp
+L OPAMP_PSPICE U?
+U 1 1 5ED268E8
+P 8600 4550
+F 0 "U?" H 8600 4550 30  0000 L CNN
+F 1 "OPAMP" H 8600 4630 30  0000 L CNN
+F 2 "" H 8600 4550 60  0001 C CNN
+F 3 "" H 8600 4550 60  0001 C CNN
+	1    8600 4550
+	1    0    0    -1  
+$EndComp
+$Comp
+L c_PSPICE C?
+U 1 1 5ED268E9
+P 8600 2950
+F 0 "C?" H 8600 2950 30  0000 L CNN
+F 1 "3.183u" H 8600 3100 30  0000 L CNN
+F 2 "" H 8600 2950 60  0001 C CNN
+F 3 "" H 8600 2950 60  0001 C CNN
+	1    8600 2950
+	1    0    0    -1  
+$EndComp
+$Comp
+L c_PSPICE C?
+U 1 1 5ED268EA
+P 9100 2950
+F 0 "C?" H 9100 2950 30  0000 L CNN
+F 1 "3.183u" H 9100 3100 30  0000 L CNN
+F 2 "" H 9100 2950 60  0001 C CNN
+F 3 "" H 9100 2950 60  0001 C CNN
+	1    9100 2950
+	1    0    0    -1  
+$EndComp
+$Comp
+L c_PSPICE C?
+U 1 1 5ED268EB
+P 9000 3950
+F 0 "C?" H 9000 3950 30  0000 L CNN
+F 1 "6.366u" H 9000 4100 30  0000 L CNN
+F 2 "" H 9000 3950 60  0001 C CNN
+F 3 "" H 9000 3950 60  0001 C CNN
+	1    9000 3950
+	0    -1   -1   0   
+$EndComp
+$Comp
+L r_PSPICE R?
+U 1 1 5ED268EC
+P 9000 3350
+F 0 "R?" H 9000 3350 30  0000 L CNN
+F 1 "0.5k" H 9000 3500 30  0000 L CNN
+F 2 "" H 9000 3350 60  0001 C CNN
+F 3 "" H 9000 3350 60  0001 C CNN
+	1    9000 3350
+	0    -1   -1   0   
+$EndComp
+$Comp
+L POT_PSPICE R?
+U 1 1 5ED268ED
+P 2000 2050
+F 0 "R?" H 2000 2050 30  0000 L CNN
+F 1 "10K" H 2000 2350 30  0001 L CNN
+F 2 "" H 2000 2050 60  0001 C CNN
+F 3 "" H 2000 2050 60  0001 C CNN
+	1    2000 2050
+	0    -1   -1   0   
+$EndComp
+$Comp
+L POT_PSPICE R?
+U 1 1 5ED268EE
+P 2000 3050
+F 0 "R?" H 2000 3050 30  0000 L CNN
+F 1 "10K" H 2000 3350 30  0001 L CNN
+F 2 "" H 2000 3050 60  0001 C CNN
+F 3 "" H 2000 3050 60  0001 C CNN
+	1    2000 3050
+	0    -1   -1   0   
+$EndComp
+$Comp
+L titleblk_PSPICE titleblk?
+U 1 1 5ED268EF
+P 9700 7200
+F 0 "titleblk?" H 19400 14400 30  0001 L CNN
+F 1 "titleblk" H 19400 14480 30  0001 L CNN
+F 2 "" H 9700 7200 60  0001 C CNN
+F 3 "" H 9700 7200 60  0001 C CNN
+	1    9700 7200
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	2800 3050 2200 3050
+Wire Wire Line
+	2200 3050 2200 2850
+Wire Wire Line
+	2800 2050 2200 2050
+Wire Wire Line
+	2200 2050 2200 1850
+Wire Wire Line
+	2000 2650 1100 2650
+Wire Wire Line
+	1400 1550 1100 1550
+Wire Wire Line
+	1100 1550 1100 1650
+Wire Wire Line
+	1800 1550 2000 1550
+Wire Wire Line
+	2000 1550 2000 1650
+Wire Wire Line
+	2000 2050 1800 2050
+Wire Wire Line
+	1400 2050 1100 2050
+Wire Wire Line
+	1100 3050 2000 3050
+Wire Wire Line
+	2800 2650 2800 2450
+Wire Wire Line
+	2800 2450 3600 2450
+Wire Wire Line
+	3600 2450 3600 2850
+Wire Wire Line
+	4400 2850 3600 2850
+Wire Wire Line
+	3600 1450 3600 1850
+Wire Wire Line
+	3600 1450 2800 1450
+Wire Wire Line
+	2800 1450 2800 1650
+Wire Wire Line
+	4400 1850 3600 1850
+Wire Wire Line
+	4800 1850 4800 2350
+Wire Wire Line
+	5400 1850 4800 1850
+Wire Wire Line
+	4800 2350 4800 2850
+Wire Wire Line
+	5200 2350 4800 2350
+Wire Wire Line
+	6000 2550 6000 1850
+Wire Wire Line
+	6000 1850 5800 1850
+Wire Wire Line
+	6300 2550 6000 2550
+Wire Wire Line
+	7200 2950 6900 2950
+Wire Wire Line
+	7300 2550 6900 2550
+Wire Wire Line
+	6900 2550 6700 2550
+Wire Wire Line
+	6900 2950 6900 2550
+Wire Wire Line
+	8000 3150 8000 2550
+Wire Wire Line
+	8000 2550 7700 2550
+Wire Wire Line
+	8000 3150 8600 3150
+Wire Wire Line
+	8600 3150 8600 2950
+Wire Wire Line
+	8600 3150 8600 3350
+Wire Wire Line
+	8600 3350 8500 3350
+Wire Wire Line
+	8500 3350 8500 3650
+Wire Wire Line
+	8900 2950 9000 2950
+Wire Wire Line
+	9000 2950 9100 2950
+Wire Wire Line
+	8900 3650 9000 3650
+Wire Wire Line
+	9000 3650 9100 3650
+Wire Wire Line
+	8600 4550 8600 4350
+Wire Wire Line
+	8600 4350 9400 4350
+Wire Wire Line
+	9400 4350 9400 4750
+Wire Wire Line
+	8600 4950 8200 4950
+Wire Wire Line
+	8200 4950 8200 4150
+Wire Wire Line
+	8200 4150 9700 4150
+Wire Wire Line
+	9700 4150 9700 2950
+Wire Wire Line
+	9400 2950 9500 2950
+Wire Wire Line
+	9500 2950 9500 3650
+Wire Wire Line
+	9700 2950 9500 2950
+Connection ~ 3600 1850
+Connection ~ 2800 1650
+Connection ~ 2800 2650
+Connection ~ 3600 2850
+Connection ~ 2800 3050
+Connection ~ 2200 2850
+Connection ~ 2800 2050
+Connection ~ 2000 2650
+Connection ~ 1100 2650
+Connection ~ 2000 3050
+Connection ~ 1100 3050
+Connection ~ 1400 1550
+Connection ~ 1100 1650
+Connection ~ 1800 1550
+Connection ~ 1800 2050
+Connection ~ 1100 2050
+Connection ~ 1400 2050
+Connection ~ 1100 2050
+Connection ~ 1100 2050
+Connection ~ 1100 3050
+Connection ~ 1100 3050
+Connection ~ 4400 2850
+Connection ~ 4800 2850
+Connection ~ 5400 1850
+Connection ~ 6000 2550
+Connection ~ 5800 1850
+Connection ~ 5200 2350
+Connection ~ 4800 2350
+Connection ~ 5200 2750
+Connection ~ 4400 1850
+Connection ~ 4800 1850
+Connection ~ 6300 2550
+Connection ~ 7200 2950
+Connection ~ 7300 2550
+Connection ~ 6700 2550
+Connection ~ 6900 2550
+Connection ~ 8000 3150
+Connection ~ 7700 2550
+Connection ~ 7200 3350
+Connection ~ 8600 2950
+Connection ~ 8600 3150
+Connection ~ 8500 3650
+Connection ~ 9100 2950
+Connection ~ 9000 2950
+Connection ~ 8900 2950
+Connection ~ 9000 3650
+Connection ~ 8900 3650
+Connection ~ 9100 3650
+Connection ~ 9000 3350
+Connection ~ 9000 3950
+Connection ~ 8600 4550
+Connection ~ 9400 4750
+Connection ~ 8600 4950
+Connection ~ 9400 2950
+Connection ~ 9500 3650
+Connection ~ 9500 2950
+Connection ~ 9500 2950
+Connection ~ 2200 1850
+Connection ~ 2000 1650
+Connection ~ 2000 2050
+Text Notes 1850 5950 0    118  ~ 24
+Please refer to the instruction sheet on how to proceed for simulation.\nhttps://esim.fossee.in/pspice-to-kicad
+$EndSCHEMATC
