@@ -1,10 +1,13 @@
 #PSpice to KiCad Schematic Converter
-#This code is written by Suryavamsi Tenetti, FOSSEE, IIT Bombay
-#Modified by Sumanto Kar and Gloria Nandihal, FOSSEE, IIT Bombay
+
+
+#This code is written by Suryavamsi Tenetti, FOSSEE, IIT Bombay and modified by Sumanto Kar and Gloria Nandihal, FOSSEE, IIT Bombay
 
 
 #eSim_PSpice_to_KiCad_Python_Parser
+
 This program converts PSpice schematic files (.sch) to KiCad schematic files (.sch)
+
 This program converts PSpice library files (.slb) to KiCad library files (.lib)
 
 USAGE:
@@ -13,6 +16,7 @@ USAGE:
 #Make sure the python compiler is installed in the PC.
 
 Run the following command in the terminal in order to install it.
+
 $ sudo apt install python3.7
 
 -----------------------------------------------
@@ -24,6 +28,7 @@ Clone or Download the eSim_PSpice_to_KiCad_Python_Parser from the Git in the Hom
 #To convert the PSpice library(.slb) files to KiCad library(.lib) files
 
 Set the path where the libparser.py file is located.
+
 $ sudo python3 libParser.py <path to the pspice lib file(slb)> <output_library_name_without_extension> 
 
 Example:
@@ -35,6 +40,7 @@ This will create analog.lib file and save it in the path </Home/eSim_PSpice_to_K
 #To convert the PSpice schematic files to KiCad schematic files
 
 Set the path where the parser.py file is located.
+
 $ sudo python3 parser.py <path/to/pspice-schematic.sch> <path/to/output-project-name-without-extension>
 
 Example:
@@ -47,11 +53,15 @@ The directory will have read only access. You need to use chmod command to chang
 #To change the access of the file and folder
 
 Use this command to change access to the files:
+
 chmod <options> <permissions> <file name>
 Example:
 chmod u=rwx,g=rx,o=r myfile
 
-You can also use: sudo chmod 777 filename.
+You can also use: 
+
+sudo chmod 777 filename.
+
 Example: sudo chmod 777 ~/Desktop/convert/rc
 
 -----------------------------------------------
