@@ -23,7 +23,7 @@ Clone or Download the *eSim_PSpice_to_KiCad_Python_Parser* from the Git in the H
 -----------------------------------------------
 **To convert the PSpice library(.slb) files to KiCad library(.lib) files**
 
-Set the path where the *libparser.py* file is located.
+Set the path where the *libparser.py* file is located. It is located at */eSim_PSpice_to_KiCad_Python_Parser/lib/PythonLib*
 
 $ sudo python3 libParser.py <path to the pspice lib file(slb)> <output_library_name_without_extension> 
 
@@ -35,7 +35,7 @@ This will create analog.lib file and save it in the path </Home/eSim_PSpice_to_K
 -----------------------------------------------
 **To convert the PSpice schematic files to KiCad schematic files**
 
-Set the path where the *parser.py* file is located.
+Set the path where the *parser.py* file is located. It is located at */eSim_PSpice_to_KiCad_Python_Parser/lib/PythonLib*
 
 $ sudo python3 parser.py <path/to/pspice-schematic.sch> <path/to/output-project-name-without-extension>
 
@@ -85,7 +85,7 @@ If all the libraries in eeschema are not loaded, follow these steps:
 -----------------------------------------------
 **To add libraries in the parser.py**
 
-Open the *parser.py* python file.
+Open the *parser.py* python file. It is located at */eSim_PSpice_to_KiCad_Python_Parser/lib/PythonLib*
 Type and add the libraries in the variables *"descr"* and *"prodescr"*
 
 -----------------------------------------------
