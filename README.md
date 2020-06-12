@@ -20,11 +20,11 @@ $ sudo apt install python3.7
 -----------------------------------------------
 #TO DOWNLOAD THE ESIM_PSPICE_TO_KICAD_PYTHON_PARSER
 
-Clone or Download the Esim_pspice_to_KiCad_parser from the Git in the Home folder(or any other folder) of the local computer.
+Clone or Download the eSim_PSpice_to_KiCad_Python_Parser from the Git in the Home folder(or any other folder) of the local computer.
 -----------------------------------------------
 #TO CHANGE THE DIRECTORY
 
-$ cd Pspice/Esim_Pspice_To_Kicad_Parser/Lib/Pythonlib
+$ cd Pspice/eSim_PSpice_to_KiCad_Python_Parser/Lib/Pythonlib
 -----------------------------------------------
 #TO CONVERT THE PSPICE LIBRARY(.slb) FILES TO KiCAD LIBRARY(.lib) FILES
 
@@ -32,7 +32,7 @@ $ sudo python3 libParser.py <path to the pspice lib file(slb)> <path where you w
 Example:
 $ sudo python3 libParser.py ~/Desktop/pspice_lib/rc.slb ~/Desktop/KiCAD_lib/
 
-By default the .lib files will be saved in the path:Pspice/Esim_Pspice_To_Kicad_Parser/Lib/Pythonlib
+By default the .lib files will be saved in the path:Pspice/eSim_PSpice_to_KiCad_Python_Parser/Lib/Pythonlib
 -----------------------------------------------
 #TO CONVERT THE PSPICE SCHEMATIC FILES TO KiCAD SCHEMATIC FILES
 
