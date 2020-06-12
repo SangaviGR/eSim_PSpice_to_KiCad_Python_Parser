@@ -1,84 +1,95 @@
-# PSpice to Oscad Schematic Converter
-#This code is written by Suryavamsi Tenetti, FOSSEE, IIT Bombay
-# Modified by Sumanto Kar and Gloria Nandihal, FOSSEE, IIT Bombay
+# eSim_PSpice_to_KiCad_Python_Parser
 
+This code is written by Suryavamsi Tenetti, FOSSEE, IIT Bombay and modified by Sumanto Kar and Gloria Nandihal, FOSSEE, IIT Bombay.
 
-# Esim_pspice_to_KiCad_parser
-The Schematic file and Library file parser to convert pspice files to KiCad files. FOSSEE eSim project, IIT BOMBAY
+This program converts PSpice schematic files (.sch) to KiCad schematic files (.sch)
 
-This program can convert PSPICE schematic files (.sch) to Kicad schematic files (.sch)
-
-It requires that all the PSPICE libraries (.slb files only) be present in lib/Libraries/
+This program converts PSpice library files (.slb) to KiCad library files (.lib)
 
 USAGE:
+
 -----------------------------------------------
-#Make sure the python compiler is installed in the PC.
+**Make sure the python 3 compiler is installed in the PC**
 
 Run the following command in the terminal in order to install it.
+
 $ sudo apt install python3.7
------------------------------------------------
-#TO DOWNLOAD THE ESIM_PSPICE_TO_KICAD_PARSER
 
-Clone or Download the Esim_pspice_to_KiCad_parser from the Git in the Home folder(or any other folder) of the local computer.
 -----------------------------------------------
-#TO CHANGE THE DIRECTORY
+**To download the eSim_PSpice_to_KiCad_Python_Parser**
 
-$ cd Pspice/Esim_Pspice_To_Kicad_Parser/Lib/Pythonlib
+Clone or Download the *eSim_PSpice_to_KiCad_Python_Parser* from the Git in the Home folder(or any other folder) of the local computer.
+
 -----------------------------------------------
-#TO CONVERT THE PSPICE LIBRARY(.slb) FILES TO KiCAD LIBRARY(.lib) FILES
+**To convert the PSpice library(.slb) files to KiCad library(.lib) files**
 
-$ sudo python3 libParser.py <path to the pspice lib file(slb)> <path where you want to save the .lib file>
+Set the path where the *libparser.py* file is located.
+
+$ sudo python3 libParser.py <path to the pspice lib file(slb)> <output_library_name_without_extension> 
+
 Example:
-$ sudo python3 libParser.py ~/Desktop/pspice_lib/rc.slb ~/Desktop/KiCAD_lib/
+$ sudo python3 libParser.py ~/Home/eSim_PSpice_to_KiCad_Python_Parser/libray/analog.slb analog
 
-By default the .lib files will be saved in the path:Pspice/Esim_Pspice_To_Kicad_Parser/Lib/Pythonlib
+This will create analog.lib file and save it in the path </Home/eSim_PSpice_to_KiCad_Python_Parser/libray/>
+
 -----------------------------------------------
-#TO CONVERT THE PSPICE SCHEMATIC FILES TO KiCAD SCHEMATIC FILES
+**To convert the PSpice schematic files to KiCad schematic files**
+
+Set the path where the *parser.py* file is located.
 
 $ sudo python3 parser.py <path/to/pspice-schematic.sch> <path/to/output-project-name-without-extension>
+
 Example:
 $ sudo python3 parser.py ~/Desktop/pspice/rc.sch ~/Desktop/convert/rc
 
-This will first create a directory rc at the location ~/Desktop/convert/
-and then the files rc.pro, rc.proj and rc.sch in /home/username/converted/rc/
------------------------------------------------
-#TO OPEN THE KiCAD PROJECT AND EESCHEMA
+This will create a folder rc at the location /Desktop/convert/. The directory will have  rc.sch, rc.proj and rc.pro.
+The directory will have read only access. You need to use chmod command to change the access.
 
-1. Go to the directory where your files are converted.
-2. Open the folder.
-4. Copy the files to some other folder if permission is not granted(optional).
-5. Click on .pro file to run the schematic.
-6. Click on EESchema button to run the schematic.
------------------------------------------------
-#TO LOAD THE LIBRARIES
-
-If all the libraries in EESchema are not loaded, follow these steps:
-1. Go to Preferences  in the EESchema menubar.
-2. Click on the Component Libraries in the drop down list.
-3. A dialog box appears, click on the Add option.
-4. Go to the path where your library to be added is saved.
-5. Select the library to be added and click on Open button.
-6. Close the dialog box.
-7. Restart the EESchema to get the updated schematic.
------------------------------------------------
-#TO CHANGE THE ACCESS OF THE FILES
+--------------------------------------------------------
+**To change the access of the file and folder**
 
 Use this command to change access to the files:
+
 chmod <options> <permissions> <file name>
 Example:
 chmod u=rwx,g=rx,o=r myfile
-Refer to the following website to know more about this command:
 
-< https://www.computerhope.com/unix/uchmod.htm >
-You can also use: sudo chmod 777 filename.
-Example: sudo chmod 777 ~/Desktop xyz
------------------------------------------------
-#TO ADD LIBRARIES IN THE PARSER.PY
+You can also use: 
 
-Open the parser.py python file in the PythonLib folder.
-Type and add the libraries in the variables "descr" and "prodescr"
+sudo chmod 777 filename.
+
+Example: sudo chmod 777 ~/Desktop/convert/rc
+
 -----------------------------------------------
-#WARNING:
+**To open the KiCad schematic file in eSim** 
+
+1. Open eSim.
+2. Create a *new project*.
+3. Open the schematic using *open schematic* option.
+4. Make sure all the libraries are loaded (9k+) using *Place component* option in eeschema.
+5. Append the schematic using *Append Schematic* option from the file menu
+6. Go to the directory where your files are converted.
+7. Select the KiCad coverted schematic file (.sch). Click on Open.
+8. To simulate, follow the instructions available on the eSim webpage
+    https://esim.fossee.in/pspice-to-kicad
+-----------------------------------------------
+**To load the KiCad libraries**
+
+If all the libraries in eeschema are not loaded, follow these steps:
+1. In eeschema, select *Preferences* option.
+2. Click on the *Component Libraries* in the drop down list.
+3. A dialog box appears, click on the *Add* option.
+4. Go to the path where your library to be added is saved.
+5. Select the library to be added and click on *Open* button.
+6. Close the dialog box.
+-----------------------------------------------
+**To add libraries in the parser.py**
+
+Open the *parser.py* python file.
+Type and add the libraries in the variables *"descr"* and *"prodescr"*
+
+-----------------------------------------------
+**WARNING**
 
 1. Filenames should NOT contain whitespaces or tabs.
 2. All required libraries SHOULD be added.
@@ -86,7 +97,6 @@ Type and add the libraries in the variables "descr" and "prodescr"
 4. DO NOT TRY TO CONVERT library file as schematic file or vice versa.
 5. Try adding libraries in the parser.py while getting error.
 6. DO NOT CHANGE any of the files unless and until needed.
-
 
 
 
