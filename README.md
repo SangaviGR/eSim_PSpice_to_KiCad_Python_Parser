@@ -18,12 +18,12 @@ $ sudo apt install python3.7
 -----------------------------------------------
 **To download the eSim_PSpice_to_KiCad_Python_Parser**
 
-Clone or Download the eSim_PSpice_to_KiCad_Python_Parser from the Git in the Home folder(or any other folder) of the local computer.
+Clone or Download the *eSim_PSpice_to_KiCad_Python_Parser* from the Git in the Home folder(or any other folder) of the local computer.
 
 -----------------------------------------------
 **To convert the PSpice library(.slb) files to KiCad library(.lib) files**
 
-Set the path where the libparser.py file is located.
+Set the path where the *libparser.py* file is located.
 
 $ sudo python3 libParser.py <path to the pspice lib file(slb)> <output_library_name_without_extension> 
 
@@ -35,7 +35,7 @@ This will create analog.lib file and save it in the path </Home/eSim_PSpice_to_K
 -----------------------------------------------
 **To convert the PSpice schematic files to KiCad schematic files**
 
-Set the path where the parser.py file is located.
+Set the path where the *parser.py* file is located.
 
 $ sudo python3 parser.py <path/to/pspice-schematic.sch> <path/to/output-project-name-without-extension>
 
@@ -64,10 +64,10 @@ Example: sudo chmod 777 ~/Desktop/convert/rc
 **To open the KiCad schematic file in eSim** 
 
 1. Open eSim.
-2. Create a new project.
-3. Open the schematic using open schematic option.
-4. Make sure all the libraries are loaded (9k+) using Place component option in eeschema.
-5. Append the schematic using Append Schematic option from the file menu
+2. Create a *new project*.
+3. Open the schematic using *open schematic* option.
+4. Make sure all the libraries are loaded (9k+) using *Place component* option in eeschema.
+5. Append the schematic using *Append Schematic* option from the file menu
 6. Go to the directory where your files are converted.
 7. Select the KiCad coverted schematic file (.sch). Click on Open.
 8. To simulate, follow the instructions available on the eSim webpage
@@ -76,20 +76,20 @@ Example: sudo chmod 777 ~/Desktop/convert/rc
 **To load the KiCad libraries**
 
 If all the libraries in eeschema are not loaded, follow these steps:
-1. In eeschema, select Preferences option.
-2. Click on the Component Libraries in the drop down list.
-3. A dialog box appears, click on the Add option.
+1. In eeschema, select *Preferences* option.
+2. Click on the *Component Libraries* in the drop down list.
+3. A dialog box appears, click on the *Add* option.
 4. Go to the path where your library to be added is saved.
-5. Select the library to be added and click on Open button.
+5. Select the library to be added and click on *Open* button.
 6. Close the dialog box.
 -----------------------------------------------
 **To add libraries in the parser.py**
 
-Open the parser.py python file in the PythonLib folder.
-Type and add the libraries in the variables "descr" and "prodescr"
+Open the *parser.py* python file.
+Type and add the libraries in the variables *"descr"* and *"prodescr"*
 
 -----------------------------------------------
-**WARNING:
+**WARNING**
 
 1. Filenames should NOT contain whitespaces or tabs.
 2. All required libraries SHOULD be added.
