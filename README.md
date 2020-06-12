@@ -1,31 +1,24 @@
-#PSpice to KiCad Schematic Converter
-
-
-#This code is written by Suryavamsi Tenetti, FOSSEE, IIT Bombay and modified by Sumanto Kar and Gloria Nandihal, FOSSEE, IIT Bombay
-
-
-#eSim_PSpice_to_KiCad_Python_Parser
-
+eSim_PSpice_to_KiCad_Python_Parser
+This code is written by Suryavamsi Tenetti, FOSSEE, IIT Bombay and modified by Sumanto Kar and Gloria Nandihal, FOSSEE, IIT Bombay.
 This program converts PSpice schematic files (.sch) to KiCad schematic files (.sch)
-
 This program converts PSpice library files (.slb) to KiCad library files (.lib)
 
 USAGE:
 
 -----------------------------------------------
-#Make sure the python compiler is installed in the PC.
+Make sure the python compiler is installed in the PC.
 
 Run the following command in the terminal in order to install it.
 
 $ sudo apt install python3.7
 
 -----------------------------------------------
-#To download the eSim_PSpice_to_KiCad_Python_Parser
+To download the eSim_PSpice_to_KiCad_Python_Parser
 
 Clone or Download the eSim_PSpice_to_KiCad_Python_Parser from the Git in the Home folder(or any other folder) of the local computer.
 
 -----------------------------------------------
-#To convert the PSpice library(.slb) files to KiCad library(.lib) files
+To convert the PSpice library(.slb) files to KiCad library(.lib) files
 
 Set the path where the libparser.py file is located.
 
@@ -37,7 +30,7 @@ $ sudo python3 libParser.py ~/Home/eSim_PSpice_to_KiCad_Python_Parser/libray/ana
 This will create analog.lib file and save it in the path </Home/eSim_PSpice_to_KiCad_Python_Parser/libray/>
 
 -----------------------------------------------
-#To convert the PSpice schematic files to KiCad schematic files
+To convert the PSpice schematic files to KiCad schematic files
 
 Set the path where the parser.py file is located.
 
@@ -50,7 +43,7 @@ This will create a folder rc at the location /Desktop/convert/. The directory wi
 The directory will have read only access. You need to use chmod command to change the access.
 
 --------------------------------------------------------
-#To change the access of the file and folder
+To change the access of the file and folder
 
 Use this command to change access to the files:
 
@@ -65,7 +58,7 @@ sudo chmod 777 filename.
 Example: sudo chmod 777 ~/Desktop/convert/rc
 
 -----------------------------------------------
-#To open the KiCad schematic file in eSim 
+To open the KiCad schematic file in eSim 
 
 1. Open eSim.
 2. Create a new project.
@@ -77,7 +70,7 @@ Example: sudo chmod 777 ~/Desktop/convert/rc
 8. To simulate, follow the instructions available on the eSim webpage
     https://esim.fossee.in/pspice-to-kicad
 -----------------------------------------------
-#To load the libraries
+To load the libraries
 
 If all the libraries in eeschema are not loaded, follow these steps:
 1. In eeschema, select Preferences option.
@@ -87,13 +80,13 @@ If all the libraries in eeschema are not loaded, follow these steps:
 5. Select the library to be added and click on Open button.
 6. Close the dialog box.
 -----------------------------------------------
-#To add libraries in the parser.py
+To add libraries in the parser.py
 
 Open the parser.py python file in the PythonLib folder.
 Type and add the libraries in the variables "descr" and "prodescr"
 
 -----------------------------------------------
-#WARNING:
+WARNING:
 
 1. Filenames should NOT contain whitespaces or tabs.
 2. All required libraries SHOULD be added.
