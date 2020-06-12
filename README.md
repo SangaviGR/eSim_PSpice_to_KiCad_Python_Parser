@@ -1,9 +1,10 @@
 # PSpice to Oscad Schematic Converter
 #This code is written by Suryavamsi Tenetti, FOSSEE, IIT Bombay
+
 #Modified by Sumanto Kar and Gloria Nandihal, FOSSEE, IIT Bombay
 
 
-# Esim_pspice_to_KiCad_Python_Parser
+# eSim_PSpice_to_KiCad_Python_Parser
 The Schematic file and Library file parser to convert pspice files to KiCad files. FOSSEE eSim project, IIT BOMBAY
 
 This program can convert PSPICE schematic files (.sch) to Kicad schematic files (.sch)
