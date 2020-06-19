@@ -25,10 +25,10 @@ Clone or Download the *eSim_PSpice_to_KiCad_Python_Parser* from the Git in the H
 
 Set the path where the *libparser.py* file is located. It is located at */eSim_PSpice_to_KiCad_Python_Parser/lib/PythonLib*
 
-$ sudo python3 libParser.py <path to the pspice lib file(slb)> <output_library_name_without_extension> 
+$ python3 libParser.py <path to the pspice lib file(slb)> <output_library_name_without_extension> 
 
 Example:
-$ sudo python3 libParser.py ~/Home/eSim_PSpice_to_KiCad_Python_Parser/libray/analog.slb analog
+$ python3 libParser.py ~/Home/eSim_PSpice_to_KiCad_Python_Parser/libray/analog.slb analog
 
 This will create analog.lib file and save it in the path </Home/eSim_PSpice_to_KiCad_Python_Parser/libray/>
 
@@ -37,10 +37,10 @@ This will create analog.lib file and save it in the path </Home/eSim_PSpice_to_K
 
 Set the path where the *parser.py* file is located. It is located at */eSim_PSpice_to_KiCad_Python_Parser/lib/PythonLib*
 
-$ sudo python3 parser.py <path/to/pspice-schematic.sch> <path/to/output-project-name-without-extension>
+$ python3 parser.py <path/to/pspice-schematic.sch> <path/to/output-project-name-without-extension>
 
 Example:
-$ sudo python3 parser.py ~/Desktop/pspice/rc.sch ~/Desktop/convert/rc
+$ python3 parser.py ~/Desktop/pspice/rc.sch ~/Desktop/convert/rc
 
 This will create a folder rc at the location /Desktop/convert/. The directory will have  rc.sch, rc.proj and rc.pro.
 The directory will have read only access. You need to use chmod command to change the access.
